@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="miestilo.css ">
+    <title>juegos favoritos</title>
+    <style>
+        body {
+            background: url('https://i.ibb.co/PM09knD/image.jpg') no-repeat fixed center;
+            background-size: cover;
+            color: white; /* Cambia el color del texto para que sea legible */
+        }
+    </style>
+
+  </head>
+
+
+  <body background="">
+    <img src="https://i.ibb.co/PM09knD/image.jpg" alt="Full Page Image" style="width: 100%; height: auto; position: absolute; top: 0; left: 0; z-index: -1;">
+
+<!-- barra de menu inicio -->
+
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="gistfile1.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="gistfile2.html">Mis juegos</a></li>
+            <li class="nav-item"><a class="nav-link" href="gistfile3.html">Gameplays</a></li>
+        </ul>
+    </div>
+  </nav>
+  <!-- barra de menu  fin -->
+
+  <div class="container"> 
+    <font	 color="Olive" face="Roboto, Arial, sans-serif">
+    <h1 align="center">Mis GamePlays</h1>
+   
+    <br>
+ 
+    
+
+   
+
+
+ <div id="video-container"></div>
+
+ <script>
+     const videoIds = [
+         'yb2KbDN1xOI',
+         'VeKbmwR7ies',
+         'iSiKCBwBQGE?si',
+         'Ra5RPXGhvuk?si',
+         'KsSusoFif4A?si',
+         'IC8qbU0daXU?si',
+     ];
+
+     const videoContainer = document.getElementById('video-container');
+
+     videoIds.forEach(videoId => {
+         const iframe = document.createElement('iframe');
+         iframe.width = '560';
+         iframe.height = '315';
+         iframe.src = `https://www.youtube.com/embed/${videoId}`;
+         iframe.frameBorder = '0';
+         iframe.allowFullscreen = true;
+
+         videoContainer.appendChild(iframe);
+     });
+ </script>
+
+  </body>
+
+
+</html>
+

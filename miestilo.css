@@ -1,0 +1,53 @@
+  body {
+            background: url('https://i.ibb.co/PM09knD/image.jpg') no-repeat fixed center;
+            background-size: cover;
+            color: white; /* Cambia el color del texto para que sea legible */
+        }
+
+h22 {
+    color: blueviolet;
+    margin-left: 2px;
+}
+
+
+  /* Estilo para la imagen  */
+  .gif {
+    width: 400px; 
+    height: 250px;
+    object-fit: cover;
+  }
+  
+
+ 
+    label{
+      color:white;
+    }
+  
+    
+    .gallery-container {
+      overflow: hidden;
+      width: 300px; /* Ancho visible de la galería */
+  }
+  
+  .gallery {
+      display: flex;
+      transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery img {
+      width: 100%;
+      height: auto;
+      margin-right: 10px; /* Espacio entre las imágenes */
+  }
+
+
+        #video-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Dos columnas en la cuadrícula */
+            gap: 20px; /* Espacio entre los videos */
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+        }
