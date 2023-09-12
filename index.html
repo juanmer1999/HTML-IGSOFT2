@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="estilo.css ">
+<title>Menu</title>
+
+
+<nav class="navbar navbar mx-auto" style="background-color: #97823f; border-radius: 20px;">
+  <a class="navbar-brand" href="index.html" style="color: #ffffff;" >
+    <img src="https://cdn-icons-png.flaticon.com/512/3112/3112990.png" width="30" height="30" class="d-inline-block align-top" alt="" >
+    S Restaurante </a>
+</nav>
+
+<div class="ex1">
+  <font color=#D4AF37 face="Roboto, Arial, sans-serif">
+    <h1 align="center">Pedidos en línea </h1></font>
+   <br>
+  </div>
+</head>
+
+<body>
+  
+    <div align="center" >
+          <label >
+                <fieldset style="width:  250px;">
+
+                    <legend> Informacion personal:</legend>
+                Nombre <br>
+                <input type = "text" name = "nom" required> 
+                <br>
+                Direcccion:<br> 
+                <input type = "text" name = "Dir" required > 
+                <br> 
+                Telefono:<br> 
+                <input type = "text" name = "Tel" required > 
+               
+                </fieldset>
+
+                <br><br>
+
+
+                <h3>Menú:</h3>
+
+               
+                <fieldset style="width: 900px; height: 900px;">
+
+                    <legend> Plato fuerte:</legend>
+<!----Plato fuerte-->
+<div class="menu-item">
+  <label for="pollo">
+
+    <img src="https://i.pinimg.com/originals/8a/4c/41/8a4c416479f708cb99c60f64f4fd5231.jpg" alt="Imagen de Corrientazo de Pollo" >
+    Corrientazo de Pollo ($10,000)
+    
+  </label>
+ 
+  <input type="number" placeholder="Digita cantidad"   id="pol" min="0">
+
+</div>
+
+<div class="menu-item">
+  <label for="cerdo">
+    <img src="https://www.elespectador.com/resizer/STRyh9RnWxJFDF5eB0ycnstzKQc=/arc-anglerfish-arc2-prod-elespectador/public/EVPUQJZBTJBOXOVC6VGBY5LVDU.jpg" alt="Imagen de Corrientazo de Cerdo" width="100" height="100">
+    Corrientazo de Cerdo ($12,000)
+  </label>
+  <input type="number" placeholder="Digita cantidad"  id="ced" min="0">
+</div>
+
+
+
+<br><br>
+<div class="menu-item">
+  <label for="lomo">
+    <img src="https://i.pinimg.com/1200x/cc/13/e5/cc13e551e9903e1f5b415c9cc8eedde9.jpg" alt="Imagen de Corrientazo de Lomo" width="100" height="100">
+    Corrientazo de Lomo ($15,000)
+  </label>
+  <input type="number" placeholder="Digita cantidad"  id="lm" min="0">
+</div>
+
+    </div>
+     </label>
+
+   </fieldset>
+   <br><br><br><br><br><br>
+<!----sopa-->
+
+<div align="center">
+    <fieldset style="width: 900px; height: 900px;">
+
+        <legend> Sopas:</legend>
+        
+    <div class="menu-item">
+   
+      <div class="image-container">
+        
+        <img src="https://www.comedera.com/wp-content/uploads/2021/04/sopa-de-costilla_shutterstock_1858869487.jpg" alt="sopa de costilla">
+        <img src="https://recetasdemicolombia.com/wp-content/uploads/2020/08/mondongo.jpg" alt="Sopa de Mondongo">
+
+    </div>
+    <img src="https://static-uat.cambiocolombia.com/s3fs-public/2023-04/mote_de_queso.jpeg" alt="Mote de Queso">
+  
+      <label for="sop">Seleccione una opción:</label>
+      <select id="sop">
+        <option value="sin-sopa">sin sopa</option>
+        <option value="costilla">Sopa de Costilla ($5,000)</option>
+        <option value="mondongo">Sopa de Mondongo ($5,000)</option>
+        <option value="mote">Mote de Queso ($5,000)</option>
+      </select>
+    </div>
+    <div class="menu-item">
+      <label for="cantidad-sopa">Cantidad</label>
+      <input type="number" id="cantidad-sopa" min="0" disabled>
+    </div>
+  </div>
+  
+ 
+  
+</fieldset>
+<br><br><br>
+
+
+<div align="center">
+    <fieldset style="width: 900px; height: 900px;">
+
+        <legend> Gaseosas:</legend>
+
+        <div class="menu-item">
+          <div class="image-container">
+        
+            <img src="https://media.ambito.com/p/73c9a8c665cb53722570c2dd29144511/adjuntos/239/imagenes/036/835/0036835544/coca-colajpg.jpg" alt="Coca cola">
+            <img src="https://fgr9xfbcd3.execute-api.us-east-1.amazonaws.com/prod/resizeImageIdeaLaWeb?path=sitio223%2FArchivos%2FProductos%2F400x300%2Fujdrdvrbf5sxoit1v0by.jpg" alt="Sopa de Mondongo">
+    
+        </div>
+        <img src="https://elmordiscoscz.com/cdn/shop/products/Artboard6_grande.jpg?v=1594180653" alt="sprite">
+          
+      <label for="gas"> (Gaseosas)<br>Seleccione una opción:</label>
+      <select id="gas">
+        <option value="sin-gas">sin bebida</option>
+        <option value="coca-cola">Coca-Cola ($2,500)</option>
+        <option value="manzana">Manzana ($2,500)</option>
+        <option value="sprite"> sprite ($2,500)</option>
+      </select>
+
+    </div>
+
+    <div class="menu-item">
+        <label for="cantidad-gas">Cantidad</label>
+        <input type="number" id="cantidad-gas" min="0" disabled>
+      </div>
+
+    </fieldset>
+    <br>  <br>  <br> <br>
+
+  <fieldset style="width: 900px; height: 1000px;">
+    <legend> Jugos Naturales:</legend>
+      <div class="menu-item">
+        <div class="image-container">
+        
+          <img src="https://pachifit.com/images/recipies/jugo-de-maracuya/Jugo-de-maracuya---Final-Web.jpg" alt="Jugo de Maracuyá">
+          <img src="https://i.pinimg.com/474x/fc/83/fc/fc83fcb5fca9f3198a18a10b338ffde6--alcohol-colors.jpg" alt="Sopa de Mondongo">
+  
+      </div>
+      <img src="https://i.pinimg.com/originals/b3/4e/e7/b34ee7a6ddba2f7a5178af4911ccbb7f.jpg" alt="Mote de Queso">
+      <label for="jug">(jugos naturales)<br>Seleccione una opción:</label>
+      <select id="jug">
+        <option value="sin-jugo">sin bebida</option>
+        <option value="maracuya">Jugo de Maracuyá ($2,000)</option>
+        <option value="fresa">Jugo de Fresa ($2,000)</option>
+        <option value="mora">Jugo de Mora ($2,000)</option>
+      </select>
+      
+    </div>
+    <div class="menu-item">
+      
+      <label for="cantidad-jugos">Cantidad</label>
+      <input type="number" id="cantidad-jugos" min="0" disabled>
+    </div>
+    <br><br>
+    
+    
+    <label for="tipojugo">En agua o leche:</label>
+    <div class="menu-item">
+      <input type="radio" id="water" name="tipojugo" value="agua" >
+      <label for="agua">Agua</label>
+    </div>
+    <div class="menu-item">
+  
+    <input type="radio" id="leche" name="tipojugo" value="leche">
+    <label for="leche">Leche</label>
+  </div>
+
+
+  </div>
+  
+</fieldset>
+<br><br><br> <br>  
+  
+<!----helados-->
+<div align="center">
+    <fieldset style="width: 900px; height: 900px;">
+
+        <legend> Helados:</legend>
+    <div class="menu-item">
+      <div class="image-container">
+        
+        <img src="https://placeralplato.com/files/2018/07/helado-de-vainilla.jpg" alt="Helado de Vainilla">
+        <img src="https://i.pinimg.com/474x/8b/f4/13/8bf41371cee437f5a4b9ebecfdb3ca1a--frances-oconnor-junk-food.jpg" alt="Sopa de Mondongo">
+
+    </div>
+    <img src="https://i.pinimg.com/600x315/4c/41/05/4c41056d472a92ffacf3e93c0e826372.jpg" alt="Mote de Queso">
+      <label for="hel">Seleccione una opción:</label>
+      <select id="hel">
+        <option value="sin-hel">sin helados</option>
+        <option value="vainilla">Helado de Vainilla ($3,000)</option>
+        <option value="chocolate">Helado de Chocolate ($3,000)</option>
+        <option value="fresa">Helado de Fresa ($3,000)</option>
+      </select>
+    </div>
+    <div class="menu-item">
+      <label for="cantidad-hel">Cantidad</label>
+      <input type="number" id="cantidad-hel" min="0" disabled>
+    </div>
+  </div> 
+</fieldset>
+  
+
+
+<br>
+
+
+
+<div class="floating-window">
+  <button class="boton_pedido" type="button" onclick="showModal(); calculateTotal()">Hacer Pedido</button>
+  <p id="total-cost">Costo total: $0</p>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+      <div class="modal-content">
+        
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p id="modal-total-cost">Costo total: $0</p>
+      </div>
+  </div>
+
+</div>
+
+ 
+
+</body>
+
+<script src="script.js"></script>
+
+
+</html>

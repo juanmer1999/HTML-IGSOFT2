@@ -1,0 +1,174 @@
+
+
+body {
+    background: url('https://i.ibb.co/DzwSTFs/3f483410b8f2f1eb486efa7142deefc3.jpg') no-repeat fixed center;
+    background-size: cover;
+    
+
+
+    
+}
+
+html {
+    height: 100%; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    margin: 0; 
+    padding: 0; 
+    border: 10px solid #D4AF37    ; 
+    box-sizing: border-box; 
+    min-height: 100%;
+  }
+
+  label{
+    color:#D4AF37;
+   display: block;
+  
+  }
+
+
+  
+
+h1,h3{
+    color:#D4AF37;
+}
+
+
+
+fieldset {
+  border: 2px solid #D4AF37; 
+  padding: 20px; 
+  backdrop-filter: blur(2px); 
+  border-radius: 5px; 
+}
+
+legend {
+  color: #ffffff; 
+  font-weight: bold; 
+  text-align: left; 
+  margin-bottom: 10px; 
+  padding: 0 10px; 
+  border: 3px solid #D4AF37; 
+  border-radius: 5px;
+}
+
+
+
+.ex1 {
+  margin: auto;
+ margin-top: 30px;
+  width: 86%;
+  height: 300px;
+  
+}
+
+.navbar{
+  margin-top: 30px;
+  width: 1000px;
+  height: 50px;
+  
+  
+  
+}
+
+
+
+.menu-item input[type="number"]
+ {
+    display: inline-block; 
+    text-align: center; 
+    
+  }
+
+
+  .menu-item {
+    display: inline-block; 
+    margin-right: 20px; 
+    
+  }
+
+  select option {
+    text-align: center;
+}
+
+
+  .menu-item label {
+    display: block;
+    font-size: 26px; 
+    font-family: 'Playfair Display', serif; 
+}
+
+  .menu-item img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 400px;
+    height: 300px;
+    border-radius: 10%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+
+  p{
+    color:#D4AF37;
+    font-size: 26px;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    height: 30vh; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .image-container {
+    display: flex;
+}
+
+.image-container img {
+    margin-right: 10px;
+}
+
+
+
+.boton_pedido {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 100px;
+  border-radius: 40px;
+  background-color: #D4AF37;
+  border: 3px solid #695618;
+  font-family: 'Playfair Display', serif; 
+  color:#695618;
+  font-size: 30px;
+  font-weight: bold; 
+
+}
+
